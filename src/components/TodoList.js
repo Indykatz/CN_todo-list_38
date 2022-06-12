@@ -4,10 +4,6 @@ const ToDoList = ({
   handleClick,
   handleCheck,
   handleArchive,
-  handleEdit,
-  newValue,
-  setNewValue,
-  index,
 }) => {
   if ({ todoChecked }) {
     return (
@@ -26,6 +22,7 @@ const ToDoList = ({
         <button className="removeButton" onClick={handleClick}>
           Remove
         </button>
+        <button onClick={handleArchive}>Archive</button>
       </div>
     );
   }

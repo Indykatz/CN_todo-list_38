@@ -62,6 +62,16 @@
   color: #f49446;
 }
 
+.archive {
+  color: #2a5a97;
+  font-size: 200%;
+  padding-bottom: 0px;
+}
+
+.archiveItems {
+  color: #f49446;
+}
+
 /* footer */
 .footer {
   /* position: fixed; */
