@@ -16,13 +16,36 @@ const ToDoList = ({
         }}
       >
         <p>{todoItem}</p>
-        <button className="checkButton" onClick={handleCheck}>
+        <button
+          className="checkButton"
+          style={{
+            color: todoChecked ? "#f49446" : "#2a5a97",
+            background: todoChecked ? "#2a5a97" : "#f49446",
+          }}
+          onClick={handleCheck}
+        >
           {todoChecked ? "Un-check" : "Check"}
         </button>
-        <button className="removeButton" onClick={handleClick}>
+        <button
+          className="removeButton"
+          style={{
+            color: todoChecked ? "#f49446" : "#2a5a97",
+            background: todoChecked ? "#2a5a97" : "#f49446",
+          }}
+          onClick={handleClick}
+        >
           Remove
         </button>
-        <button onClick={handleArchive}>Archive</button>
+        <button
+          className="archiveButton"
+          style={{
+            color: todoChecked ? "#f49446" : "#2a5a97",
+            background: todoChecked ? "#2a5a97" : "#f49446",
+          }}
+          onClick={handleArchive}
+        >
+          Archive
+        </button>
       </div>
     );
   }

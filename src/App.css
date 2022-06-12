@@ -45,17 +45,44 @@
 }
 
 .eachToDo {
-  height: 100px;
+  height: auto;
   width: 200px;
   padding: 20px;
   margin: 20px;
   border-radius: 6px;
+  font-weight: bold;
+  font-size: large;
 }
 
 .removeButton,
 .addItem,
 .checkButton {
   margin: 10px;
+}
+
+.removeButton,
+.addItem,
+.checkButton,
+.archiveButton,
+.submitButton {
+  background-color: #f49446;
+  color: #2a5a97;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0 0 5px #2a5a97;
+  cursor: pointer;
+}
+/* Animation on button */
+/* All button */
+.removeButton:active,
+.checkButton:active,
+.archiveButton:active,
+.submitButton:active {
+  color: #f49446;
+  background: #2a5a97;
+  box-shadow: 0 0 10px #f49446, 0 0 40px #f49446, 0 0 80px;
+  transform: translateY(4px);
 }
 
 .addItemLabel {
